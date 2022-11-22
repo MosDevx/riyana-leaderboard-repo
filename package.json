@@ -41,6 +41,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "webpack": "^3.3.0",
     "html-webpack-plugin": "^5.5.0",
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
