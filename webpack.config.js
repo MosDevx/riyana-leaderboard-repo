@@ -1,38 +1,39 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
-  mode: 'development',
-  entry: {
-    main: path.resolve(__dirname, './src/index.js'),
-  },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
-  },
-  devServer: {
-    static: './dist',
-    open: true,
-  },
+import { resolve } from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'To Do list',
-      template: './src/index.html',
-    }),
+export const mode = 'development';
+export const entry = {
+  main: resolve(__dirname, './src/index.js'),
+};
+export const output = {
+  filename: '[name].bundle.js',
+  path: resolve(__dirname, 'dist'),
+  clean: true,
+};
+export const devServer = {
+  static: './dist',
+  open: true,
+};
+export const plugins = [
+  new HtmlWebpackPlugin({
+    title: 'Leaderboard',
+    template: './src/index.html',
+  }),
+];
+export const module = {
+  rules: [
+    {
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+    },
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: ['babel-loader'],
+    },
   ],
-
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  optimization: {
-    runtimeChunk: 'single',
-  },
-
+};
+export const optimization = {
+  runtimeChunk: 'single',
 };
