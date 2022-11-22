@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&display=swap');
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #c4b5b5;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+form {
+  float: right;
+  margin-right: 20%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: grey;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(134, 59, 45);
+}
+
+h3 {
+  margin-left: 66%;
+  color: rgb(27, 75, 75);
+}
+
+.highlight {
+  font-size: 35px;
+  color: orange;
+}
+
+.board {
+  display: flex;
+}
+
+button {
+  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 19px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 20px 30px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+}
+
+.input {
+  margin-top: 10px;
+  border-color: #008cba;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-left: 50px;
+  margin-top: 22px;
+  background-color: rgb(29, 163, 163);
+  border: 2px solid #008cba;
+  border-radius: 10px;
+}
+
+.board-score {
+  color: blue;
+  float: left;
+}
+
+ul {
+  border: solid;
+  border-color: rgba(26, 146, 182, 0.533);
+  border-width: 7px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 2%;
+  line-height: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  color: rgb(10, 1, 1);
+}
+
+.submit {
+  width: 58px;
+  background-color: #4caf50; /* Green */
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+}
