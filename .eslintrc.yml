@@ -1,0 +1,11 @@
+settings:
+  import/resolver:
+    webpack:
+      config: 'config/webpack/development.js'
+      resolve: {
+  ...
+  alias: {
+    assets: resolve('app/assets'),
+    javascript: resolve(settings.source_path),
+  },
+},
