@@ -45,8 +45,6 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "webpack": "^3.3.0",
-    "html-webpack-plugin": "^5.5.0",
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
     "acorn": "^8.8.1",
@@ -255,6 +253,7 @@
     "hosted-git-info": "^5.2.1",
     "html-encoding-sniffer": "^3.0.0",
     "html-tags": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "htmlparser2": "^3.10.1",
     "http-cache-semantics": "^4.1.0",
     "http-errors": "^2.0.0",
@@ -596,6 +595,7 @@
     "w3c-xmlserializer": "^4.0.0",
     "wcwidth": "^1.0.1",
     "webidl-conversions": "^7.0.0",
+    "webpack": "^3.3.0",
     "whatwg-encoding": "^2.0.0",
     "whatwg-mimetype": "^3.0.0",
     "whatwg-url": "^11.0.0",
